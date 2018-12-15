@@ -16,17 +16,17 @@ export default class Home extends React.Component {
                     <nav>
                         <img src={logo} alt="logo"/>
                         <ul>
-                            <li><Link to='/edit'>회원정보수정</Link></li>
+                            <li><Link to='/edit'>회원정보 수정</Link></li>
                             <div/>
                             <li><Link to='/login'>로그아웃</Link></li>
                         </ul>
                     </nav>
                     <div>
                         <img src={drag}/> <br/>
-                        <Link to="/"><button type="submit">파일 선택하기</button></Link>
+                        <Link to="/"><input type="file"  accept=".jpg, .png, .dcm, .dicom">파일 선택하기</input></Link>
                     </div>
                     <div>
-                        파일 업로드시 본 약관을 동의하는 것으로 간주합니다. <span>(약관 바로가기)</span>
+                        파일 업로드시 본 약관을 동의하는 것으로 간주합니다. <span><Link to='/term'>(약관 바로가기)</Link></span>
                     </div>
                 </header>
             </div>

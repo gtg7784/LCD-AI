@@ -15,11 +15,11 @@ class App extends Component {
             return <Login />;
         } else if(window.location.pathname === '/join') {
             return <Join />;
-        } else {
+        } else if(window.location.pathname === '/use'){
+           return <Home/>;
+        }else{
             return (
-                <div className={cx("App")}>
-                    <Home/>
-                </div>
+                <div className={cx("App")} />
             );
         }
 
