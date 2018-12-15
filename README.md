@@ -1,44 +1,48 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# LungCancerDetection
+by @bonolife
+## 기획의도
 
-## Available Scripts
+이 아이디어를 기획하면서 가장 많이 보았던 것이 **오진**이다.  
 
-In the project directory, you can run:
+암 '오진 확률' 폐암이 가장 많아 - 미주 한국일보’  
+오진 확률 높은 암, 폐암 > 유방암 > 소화기계 암 - 머니S
 
-### `npm start`
+의료진 분들도 사람이기 때문에 **당연 오진이 발생할 수 있는 부분이다.**  
+폐암 같은 경우에는 컴퓨터 단층 촬영으로 먼저 폐암 여부를 파악하는데  
+컴퓨터 단층 촬영에서 **발견하지 못하여서 피해가 발생하는 경우가 많습니다.**  
+이러한 경우를 방지하기 위해서 이 아이디어를 생각하였습니다.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+What I saw the most while planning this idea is  Wrong treatment.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+Cancer 'odds probability' lung cancer is the most -  
+Cancer of high probability of cancer, lung cancer> Breast cancer>   Digestive system cancer - Money S
 
-### `npm test`
+Because the medical staff are also people, it is the part where the misdiagnosis can occur.
+In the case of lung cancer, a computerized tomography is first used to determine whether lung cancer is present
+It is often the case that damage is not found in the computed tomography
+I thought of this idea to prevent this case.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 자주 묻는 질문
 
-### `npm run build`
+- Q. PET-CT를 사용하면 더더욱 발견할 수 있는 확률이 높지 않은가?
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    - -A. 발견할 수 있는 확률이 높다는 것은 사실입니다.  
+     그러나 PET-CT에 경우엔 연간 피폭한계량 1mSv를 13배가 넘는 13~25mSv 정도
+     방사선 피폭이 발생하게 됩니다.  
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+ - Q. 폐암을 선택한 이유가 무엇인가?
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    - A. 시간이 촉박한 경우도 있지만,  
+      대한민국에선 폐암 오진이 가장 많았습니다.  
+     이 기획에 목표가 오진을 줄여서 환자에게 돌아가는 피해를 줄이기 위한 프로젝트이므로 오진이 가장 많이 발생하는 부분부터 고치는 것이 맞다고   생각하였습니다.
 
-### `npm run eject`
+- Q. Is not PET-CT more likely to be found?
+    - A. It is true that there is a high probability of being discovered.
+      However, in the case of PET-CT, the annual exposure limit of 1 mSv         is 13 to 25 mSv Radiation exposure will occur.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Q. Why did you choose lung cancer?
+    
+    - A. There are times when time is tight,  
+    In Korea, lung cancer misdiagnosis was the most common.Since this project aims to reduce the damage caused to patients by         reducing the number of misdiagnoses, I thought it was right to fix     the part where the misdiagnosis occurred the most.
