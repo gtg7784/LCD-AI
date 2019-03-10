@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { hot } from 'react-hot-loader';
+import { Switch, Route } from 'react-router-dom'
 import * as classNames from 'classnames/bind';
 import styles from './App.scss';
 
@@ -11,19 +12,17 @@ const cx = classNames.bind(styles);
 
 class App extends Component {
     render() {
-        if (window.location.pathname === '/login') {
-            return <Login />;
-        } else if(window.location.pathname === '/join') {
-            return <Join />;
-        } else if(window.location.pathname === '/use'){
-           return <Home/>;
-        }else{
-            return (
-                <div className={cx("App")} />
-            );
-        }
+        return(
+            <div className="App1">
+                <Switch>
+                    <Route path='/login' exact component={Login} />
+                    <Route path='/join' exact component={Join} />
+                    <Route path='/' exact component={Home} />
+                </Switch>
+            </div>
+        )
 
     }
 }
 
-export default hot(module)(App);
+export default App;
