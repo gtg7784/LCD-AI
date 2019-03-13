@@ -4,9 +4,10 @@ import { Switch, Route } from 'react-router-dom'
 import * as classNames from 'classnames/bind';
 import styles from './App.scss';
 
-import Login from './0.Login/Login';
-import Join from './2.Join/Join';
-import Home from "./1.Home/Home";
+import Login from './Login/Login';
+import Join from './Join/Join';
+import Upload from "./Upload/Upload";
+import Main from './Main/Main'
 
 const cx = classNames.bind(styles);
 
@@ -17,7 +18,8 @@ class App extends Component {
                 <Switch>
                     <Route path='/login' exact component={Login} />
                     <Route path='/join' exact component={Join} />
-                    <Route path='/' exact component={Home} />
+                    <Route path='/upload' exact component={Upload} />
+                    <Route exact component={Main}/>
                 </Switch>
             </div>
         )
